@@ -314,3 +314,7 @@ iframe {
 #certifications {
   max-width: 1200px;
 }
+
+#certifications > div {
+  text-align: left;
+}
