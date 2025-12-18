@@ -311,3 +311,6 @@ iframe {
     font-size: 5vw;
   }
 }
+#certifications {
+  max-width: 1200px;
+}
