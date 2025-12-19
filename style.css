@@ -334,3 +334,19 @@ iframe {
     font-size: 5vw;
   }
 }
+/* ---- CERTIFICATIONS LAYOUT FIX ---- */
+#certifications {
+  max-width: 1200px;
+}
+
+#certifications .certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: left;
+}
+
+#certifications .certifications-grid > div {
+  display: flex;
+  gap: 1rem;
+}
