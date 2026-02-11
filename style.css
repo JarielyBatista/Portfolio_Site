@@ -163,6 +163,10 @@ nav a:hover {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
+.overlay h3 {
+  margin: 0 0 1rem 0;   /* removes default side margins */
+  max-width: 90%;
+}
 
 .overlay a,
 .overlay span {
