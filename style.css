@@ -2,18 +2,18 @@
 :root {
   --background-color: #F4F0E6;
   --header-background: #87977E;
-  --header-text-color: #FFFFFF;
+  --header-text-color: #F4F0E6;
   --section-background: #DCE3D5;
   --accent-color: #E9E4D8;
   --text-color: #554B3F;
   --footer-background: #87977E;
-  --footer-text-color: #FFFFFF;
+  --footer-text-color: #F4F0E6;
   --overlay-bg: rgba(55, 65, 48, 0.85);
 }
 
 body {
   margin: 0;
-  font-family: Playfair;
+  font-family: Playfair, serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -39,24 +39,27 @@ nav {
 }
 
 nav a {
+  font-family: Playfair, serif;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  color: var(--header-text-color);
+  font-size: 22px;
+  color: #F4F0E6;
   padding: 0.6rem 1.2rem;
   border-radius: 10px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #6F8068;
+  background-color: #A8B69E;
+  color: #F4F0E6;
 }
 
 .intro,
 .section {
   padding: 2rem;
   max-width: 800px;
-  margin: auto;
+  margin: 2rem auto;
+  box-sizing: border-box;
   background-color: var(--section-background);
   border-radius: 10px;
   text-align: center;
@@ -203,7 +206,7 @@ form textarea {
 form button {
   margin-top: 1rem;
   background-color: var(--header-background);
-  color: #FFFFFF;
+  color: #F4F0E6;
   border: none;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -229,19 +232,22 @@ footer {
 }
 
 .resume-download {
-  color: var(--header-text-color);
-  background-color: transparent;
+  display: inline-block;
+  color: #554B3F;
+  background-color: #E9E4D8;
   padding: 0.6rem 1.2rem;
   border-radius: 10px;
-  border: 2px solid var(--header-text-color);
+  border: 2px solid #554B3F;
+  font-family: Playfair, serif;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-download:hover {
-  background-color: #6F8068;
+  background-color: #87977E;
   color: #FFFFFF;
+  border-color: #87977E;
 }
 
 img,
@@ -254,6 +260,18 @@ iframe {
   padding: 0.4rem 0.9rem;
   font-size: 0.9rem;
   border-radius: 8px;
+  color: #554B3F;
+  background-color: #E9E4D8;
+  border: 2px solid #554B3F;
+  font-family: Playfair, serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.certificate-button:hover {
+  background-color: #87977E;
+  color: #FFFFFF;
+  border-color: #87977E;
 }
 
 /* ---------------- CERTIFICATIONS ---------------- */
@@ -287,6 +305,25 @@ iframe {
   flex-shrink: 0;
 }
 
+/* ---------------- SECTION SPACING ---------------- */
+
+#certifications,
+#resume,
+#portfolio {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------------- SECTION TITLES ---------------- */
+
+.section h2,
+.intro h2 {
+  font-size: 36px;
+  color: #554B3F;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 768px) {
@@ -302,6 +339,10 @@ iframe {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+
+  nav a {
+    font-size: 21px;
   }
 
   .intro-container {
@@ -323,10 +364,7 @@ iframe {
     grid-template-columns: 1fr;
   }
 
-  .certifications-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .certifications-grid,
   #certifications .certifications-grid {
     grid-template-columns: 1fr;
   }
@@ -339,6 +377,11 @@ iframe {
     display: inline-block;
     margin-top: 1rem;
   }
+
+  .section h2,
+  .intro h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -349,78 +392,4 @@ iframe {
   p {
     font-size: 5vw;
   }
-}
-/* ---------------- SECTION SPACING FIX ---------------- */
-
-.intro,
-.section {
-  margin: 2rem auto;
-  box-sizing: border-box;
-}
-
-/* Give sections breathing room */
-#certifications,
-#resume,
-#portfolio {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-/* ---------------- SECTION TITLE STYLING ---------------- */
-
-.section h2,
-.intro h2 {
-  font-size: 36px;
-  color: #554B3F;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-}
-
-/* Mobile title sizing */
-@media (max-width: 768px) {
-  .section h2,
-  .intro h2 {
-    font-size: 30px;
-  }
-}
-/* ---------------- NAVIGATION STYLING ---------------- */
-
-nav a {
-  font-family: Playfair, serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #554B3F;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #DCE3D5;
-  color: #554B3F;
-}
-
-/* Mobile navigation */
-@media (max-width: 768px) {
-  nav a {
-    font-size: 21px;
-  }
-}
-/* ---------------- BUTTON COLOR STYLING ---------------- */
-
-.certificate-button,
-.resume-download {
-  color: #554B3F;
-  background-color: #E9E4D8;
-  border: 2px solid #554B3F;
-  font-family: Playfair, serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Button hover effects */
-.certificate-button:hover,
-.resume-download:hover {
-  background-color: #87977E;
-  color: #FFFFFF;
-  border-color: #87977E;
 }
