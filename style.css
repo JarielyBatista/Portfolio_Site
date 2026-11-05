@@ -350,3 +350,58 @@ iframe {
     font-size: 5vw;
   }
 }
+/* ---------------- SECTION SPACING FIX ---------------- */
+
+.intro,
+.section {
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+/* Give sections breathing room */
+#certifications,
+#resume,
+#portfolio {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------------- SECTION TITLE STYLING ---------------- */
+
+.section h2,
+.intro h2 {
+  font-size: 36px;
+  color: #554B3F;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Mobile title sizing */
+@media (max-width: 768px) {
+  .section h2,
+  .intro h2 {
+    font-size: 30px;
+  }
+}
+/* ---------------- NAVIGATION STYLING ---------------- */
+
+nav a {
+  font-family: Playfair, serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #554B3F;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #DCE3D5;
+  color: #554B3F;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 21px;
+  }
+}
