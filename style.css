@@ -405,3 +405,22 @@ nav a:hover {
     font-size: 21px;
   }
 }
+/* ---------------- BUTTON COLOR STYLING ---------------- */
+
+.certificate-button,
+.resume-download {
+  color: #554B3F;
+  background-color: #E9E4D8;
+  border: 2px solid #554B3F;
+  font-family: Playfair, serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effects */
+.certificate-button:hover,
+.resume-download:hover {
+  background-color: #87977E;
+  color: #FFFFFF;
+  border-color: #87977E;
+}
