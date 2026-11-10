@@ -250,10 +250,10 @@ footer {
 .resume-download {
   display: inline-block;
   color: #554B3F;
-  background-color: #F4F0E6;
+  background-color: #E9E4D8;
   padding: 0.6rem 1.2rem;
   border-radius: 10px;
-  border: 2px solid #87977E;
+  border: 2px solid #554B3F;
   font-family: Playfair, serif;
   font-weight: bold;
   text-decoration: none;
@@ -281,8 +281,8 @@ iframe {
   font-size: 0.9rem;
   border-radius: 8px;
   color: #554B3F;
-  background-color: #F4F0E6;
-  border: 2px solid #87977E;
+  background-color: #E9E4D8;
+  border: 2px solid #554B3F;
   font-family: Playfair, serif;
   font-weight: bold;
   cursor: pointer;
